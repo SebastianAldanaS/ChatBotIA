@@ -1,0 +1,106 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e2f;
+  color: #e4e4e7;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #2a2a40;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #a78bfa;
+}
+
+.chat-box {
+  background: #1f1f2e;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #3f3f5e;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 8px; /* Ancho de la scrollbar */
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #2a2a40; /* Color del fondo de la scrollbar */
+  border-radius: 1rem;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: #a78bfa; /* Color del "pulgar" de la scrollbar */
+  border-radius: 1rem;
+  transition: background 0.3s;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed; /* Color del "pulgar" al pasar el mouse */
+}
+
+.user {
+  text-align: right;
+  margin-bottom: 0.5rem;
+  color: #60a5fa;
+}
+
+.assistant {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #e4e4e7;
+  background: #3b3b5c;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.input-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #3f3f5e;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #2a2a40;
+  color: #e4e4e7;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus {
+  border-color: #a78bfa;
+  background-color: #3b3b5c;
+}
+
+button {
+  background: #a78bfa;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #7c3aed;
+  transform: scale(1.05);
+}
